@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfCalls",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfCalls",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }

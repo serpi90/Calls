@@ -1,0 +1,14 @@
+{
+	"category" : "Calls-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"strategies" ],
+	"name" : "PhoneCallCostCalculator",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

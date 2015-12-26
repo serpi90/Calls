@@ -1,0 +1,14 @@
+{
+	"category" : "Calls-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"callRegistry" ],
+	"name" : "PhoneCallBillingSystemTest",
+	"pools" : [
+		 ],
+	"super" : "PhoneCallsTests",
+	"type" : "normal" }

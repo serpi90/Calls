@@ -1,0 +1,4 @@
+Accessing
+startTime
+
+	^ timePeriod from

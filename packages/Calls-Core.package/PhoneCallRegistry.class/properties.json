@@ -1,0 +1,14 @@
+{
+	"category" : "Calls-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"calls" ],
+	"name" : "PhoneCallRegistry",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,4 @@
+Accessing
+endTime
+
+	^ timePeriod to

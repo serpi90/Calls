@@ -1,0 +1,14 @@
+{
+	"category" : "Calls-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "UnknownPricingStrategy",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "Calls-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "InternationalCallClassification",
+	"pools" : [
+		 ],
+	"super" : "CallClassification",
+	"type" : "normal" }

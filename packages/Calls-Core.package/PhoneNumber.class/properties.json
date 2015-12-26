@@ -1,0 +1,16 @@
+{
+	"category" : "Calls-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"countryCode",
+		"areaCode",
+		"subscriberNumber" ],
+	"name" : "PhoneNumber",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

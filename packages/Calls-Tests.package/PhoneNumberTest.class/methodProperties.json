@@ -1,0 +1,7 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testAPhoneNumberHasACountryCodeAnAreaCodeAndSubscriberNumber" : "julianmaestri 10/13/2015 16:44",
+		"testEquality" : "julianmaestri 10/14/2015 01:03",
+		"testHash" : "julianmaestri 10/14/2015 01:03" } }

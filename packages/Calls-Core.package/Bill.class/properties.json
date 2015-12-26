@@ -1,0 +1,15 @@
+{
+	"category" : "Calls-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"pricedCalls",
+		"basicPayment" ],
+	"name" : "Bill",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

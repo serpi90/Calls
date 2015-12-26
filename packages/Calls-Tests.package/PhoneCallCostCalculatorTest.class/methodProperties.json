@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testInternationalPhoneCalls" : "julianmaestri 10/14/2015 23:52",
+		"testLocalPhoneCallsOnNonWorkingDays" : "julianmaestri 10/14/2015 23:29",
+		"testLocalPhoneCallsOnWorkingDaysFrom8amTo8pm" : "julianmaestri 10/14/2015 23:36",
+		"testLocalPhoneCallsOnWorkingDaysFrom8pmTo8am" : "julianmaestri 10/14/2015 23:37",
+		"testNationalPhoneCalls" : "julianmaestri 10/14/2015 23:52" } }

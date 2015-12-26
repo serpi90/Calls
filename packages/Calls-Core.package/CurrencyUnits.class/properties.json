@@ -1,0 +1,15 @@
+{
+	"category" : "Calls-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Current" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"peso",
+		"cent" ],
+	"name" : "CurrencyUnits",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

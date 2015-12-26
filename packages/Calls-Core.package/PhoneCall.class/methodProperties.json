@@ -1,0 +1,11 @@
+{
+	"class" : {
+		"from:to:since:to:" : "jmaestri 11/3/2015 17:23" },
+	"instance" : {
+		"calledParty" : "julianmaestri 10/13/2015 14:01",
+		"callingParty" : "julianmaestri 10/13/2015 14:02",
+		"duration" : "julianmaestri 10/14/2015 23:45",
+		"endTime" : "julianmaestri 10/14/2015 23:43",
+		"initializeFrom:to:since:to:" : "julianmaestri 10/14/2015 23:42",
+		"printOn:" : "jmaestri 11/3/2015 17:24",
+		"startTime" : "julianmaestri 10/14/2015 23:43" } }

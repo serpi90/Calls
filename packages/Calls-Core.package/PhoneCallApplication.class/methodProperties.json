@@ -1,0 +1,20 @@
+{
+	"class" : {
+		"default" : "jmaestri 11/3/2015 15:16" },
+	"instance" : {
+		"fortyCentsPerMinute" : "jmaestri 11/3/2015 15:18",
+		"getBillFrom:" : "jmaestri 11/3/2015 16:54",
+		"initializeDefault" : "jmaestri 11/3/2015 15:20",
+		"initializeTeapotServer" : "jmaestri 11/3/2015 17:04",
+		"intializeModel" : "jmaestri 11/3/2015 15:20",
+		"oneHundredAndTwentyPesos" : "jmaestri 11/3/2015 15:19",
+		"otherCountryPricingList" : "jmaestri 11/3/2015 15:29",
+		"parseDateTimeFrom:" : "jmaestri 11/3/2015 17:22",
+		"parseMonthOfYear:" : "jmaestri 11/3/2015 16:08",
+		"parsePhoneFrom:" : "jmaestri 11/3/2015 15:36",
+		"registerCallFrom:" : "jmaestri 11/3/2015 17:20",
+		"sameCountryPricingList" : "jmaestri 11/3/2015 15:28",
+		"tenCentsPerMinute" : "jmaestri 11/3/2015 15:18",
+		"thirtyCentsPerMinute" : "jmaestri 11/3/2015 15:18",
+		"twentyCentsPerMinute" : "jmaestri 11/3/2015 15:18",
+		"twentyFiveCentsPerMinute" : "jmaestri 11/3/2015 15:18" } }

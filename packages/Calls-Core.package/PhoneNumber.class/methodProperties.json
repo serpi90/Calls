@@ -1,0 +1,11 @@
+{
+	"class" : {
+		"withCountryCode:areaCode:subscriberNumber:" : "julianmaestri 10/13/2015 14:23" },
+	"instance" : {
+		"=" : "julianmaestri 10/14/2015 01:02",
+		"areaCode" : "julianmaestri 10/13/2015 14:22",
+		"countryCode" : "julianmaestri 10/13/2015 14:21",
+		"hash" : "julianmaestri 10/14/2015 01:02",
+		"initializeWithCountryCode:areaCode:subscriberNumber:" : "julianmaestri 10/13/2015 14:23",
+		"printOn:" : "julianmaestri 10/13/2015 16:44",
+		"subscriberNumber" : "julianmaestri 10/13/2015 14:22" } }

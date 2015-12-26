@@ -1,0 +1,21 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"anotherLocalCallFrom:" : "julianmaestri 10/15/2015 00:26",
+		"billingSystemWithNoCalls" : "julianmaestri 10/15/2015 00:44",
+		"internationalCallFrom:" : "julianmaestri 10/15/2015 00:31",
+		"localCallFrom:" : "julianmaestri 10/15/2015 00:26",
+		"nationalCallFrom:" : "julianmaestri 10/15/2015 00:30",
+		"oneHundredAndTwentyPesos" : "julianmaestri 10/14/2015 21:45",
+		"setUp" : "julianmaestri 10/14/2015 21:38",
+		"testBillDiscriminatedSectionsAddUpToTheTotalAmount" : "julianmaestri 10/15/2015 00:44",
+		"testBillDiscriminatesBasicPayment" : "julianmaestri 10/15/2015 00:46",
+		"testBillDiscriminatesInternationalCalls" : "julianmaestri 10/15/2015 00:33",
+		"testBillDiscriminatesLocalCalls" : "julianmaestri 10/15/2015 00:32",
+		"testBillDiscriminatesNationalCalls" : "julianmaestri 10/15/2015 00:33",
+		"testBillingWhenNoCalls" : "julianmaestri 10/14/2015 23:40",
+		"testBillingWithOneLocalCall" : "julianmaestri 10/14/2015 23:40",
+		"testBillingWithTwoLocalCalls" : "julianmaestri 10/14/2015 23:46",
+		"testBillingWithTwoLocalCallsAndANationalCall" : "julianmaestri 10/15/2015 00:28",
+		"testBillingWithTwoLocalCallsAndANationalCallAndInternationalCall" : "julianmaestri 10/15/2015 00:29" } }

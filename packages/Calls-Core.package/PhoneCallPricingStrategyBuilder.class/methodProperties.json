@@ -1,0 +1,13 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"errorDueToUnknownInternationalPricingFor:" : "jmaestri 10/20/2015 20:36",
+		"errorDueToUnknownNationalPricingFor:" : "jmaestri 10/20/2015 20:36",
+		"forInternationalCallsConsidering:" : "jmaestri 10/20/2015 20:57",
+		"forLocalCallsOnNonWorkingDaysPriced:" : "jmaestri 10/20/2015 20:56",
+		"forLocalCallsOnNonWorkingHoursPriced:" : "jmaestri 10/20/2015 20:56",
+		"forLocalCallsOnWorkingHoursPriced:" : "jmaestri 10/20/2015 20:56",
+		"forNationalCallsConsidering:" : "jmaestri 10/20/2015 20:54",
+		"isOnWorkingDay:" : "jmaestri 10/20/2015 20:36",
+		"isOnWorkingHours:" : "jmaestri 10/20/2015 20:36" } }

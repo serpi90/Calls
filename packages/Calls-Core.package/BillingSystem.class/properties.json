@@ -1,0 +1,16 @@
+{
+	"category" : "Calls-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"calculator",
+		"price",
+		"callRegistry" ],
+	"name" : "BillingSystem",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

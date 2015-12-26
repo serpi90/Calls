@@ -1,0 +1,4 @@
+InstanceCreation
+consideringCallsThatMatch: aCriterion pricingAccordingTo: aPriceProvider
+
+	^self new intializeConsideringCallsThatMatch: aCriterion pricingAccordingTo: aPriceProvider

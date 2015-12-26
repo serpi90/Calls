@@ -1,0 +1,14 @@
+{
+	"category" : "Calls-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "PhoneNumberTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

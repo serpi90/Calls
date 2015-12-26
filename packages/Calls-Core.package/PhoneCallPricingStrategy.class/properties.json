@@ -1,0 +1,15 @@
+{
+	"category" : "Calls-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"criterion",
+		"priceResolver" ],
+	"name" : "PhoneCallPricingStrategy",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
