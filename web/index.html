@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html ng-app="phoneCallsApp">
+	<head>
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+		<link rel="icon" href="favicon.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta charset="UTF-8"/>
+		<title>WatsCall</title>
+	</head>
+	<body class="teal lighten-5">
+		<div class="container">
+			<div class="row"></div>
+			<div class="row">
+				<form class="col s12 l8 z-depth-1 white" ng-controller="PhoneRegisterController" name="register">
+					<h4>Registrar una Llamada</h4>
+					<div class="row">
+						<div class="input-field col s12 m6">
+							<i class="material-icons prefix">phone</i>
+							<input id="calling_party" type="tel" class="calling_party" ng-model="calling_party" required/>
+							<label for="calling_party">Origen</label>
+						</div>
+						<div class="input-field col s12 m6">
+							<i class="material-icons prefix">phone</i>
+							<input id="called_party" type="tel" class="called_party" ng-model="called_party" required/>
+							<label for="called_party">Destino</label>
+						</div>
+						<div class="input-field col s12 m4">
+							<i class="material-icons prefix">today</i>
+							<input id="start_date" type="text" class="datepicker" ng-model="start.date" ng-change="updateTimes()" ng-pattern="datePattern" required/>
+							<label for="start_date">Fecha Inicio</label>
+						</div>
+						<div class="input-field col s6 m4">
+							<i class="material-icons prefix">schedule</i>
+							<input id="start_time" type="text" class="timepicker" ng-model="start.time" ng-change="updateTimes()" ng-pattern="timePattern" required/>
+							<label for="start_time">Hora Inicio</label>
+						</div>
+						<div class="input-field col s6 m4">
+							<input id="duration_in_minutes" type="number" ng-model="duration" ng-change="updateTimes()" required/>
+							<label for="duration_in_minutes">Duración (minutos)</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12">
+							<button id="register" class="right btn waves-effect waves-light" ng-disabled="register.$invalid"  ng-click="register()">Registrar</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<span ng-controller="PhoneBillController">
+			<div class="row">
+				<form class="col s12 l8 z-depth-1 white" name="do-bill">
+					<h4>Facturar una Línea</h4>
+					<div class="row">
+						<div class="input-field col s12 m6">
+							<i class="material-icons prefix">phone</i>
+							<input id="calling_party" type="tel" class="calling_party" ng-model="line"/ required>
+							<label for="calling_party">Línea</label>
+						</div>
+						<div class="input-field col s12 m6">
+							<i class="material-icons prefix">today</i>
+							<input id="month" type="text" class="monthpicker" ng-model="monthOfYear"/ required>
+							<label for="month">Mes</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12">
+							{{line}}
+							{{monthOfYear}}
+							<button class="right modal-trigger waves-effect waves-light btn" href="#factura" ng-disable="do-bill.$invalid" ng-click="getBill()">Facturar</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div id="factura" class="modal modal-fixed-footer">
+				<div class="modal-content">
+					<h4>Factura de {{calling_party}}</h4>
+					<ul class="collapsible" data-collapsible="expandable">
+						<li>
+							<div class="collapsible-header">Básico<span class="right">{{bill.basic}}</span></div>
+						</li>
+						<li ng-show="bill.localCalls.length">
+							<div class="collapsible-header">Llamadas Locales <span class="right">{{bill.totals.local}}</span></div>
+							<div class="collapsible-body">
+								<table class="striped">
+									<tbody>
+										<tr ng-repeat="call in bill.localCalls">
+											<td>{{call.to}}</td>
+											<td>{{call.start | date: 'MM/dd/yyyy @ hh:mm'}}</td>
+											<td>{{call.duration}} min</td>
+											<td>${{call.cost}}</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</li>
+						<li ng-show="bill.nationalCalls.length">
+							<div class="collapsible-header">Llamadas Nacionales <span class="right">{{bill.totals.national}}</span></div>
+							<div class="collapsible-body">
+								<table class="striped">
+									<tbody>
+										<tr ng-repeat="call in bill.nationalCalls">
+											<td>{{call.to}}</td>
+											<td>{{call.start | date: 'MM/dd/yyyy @ hh:mm'}}</td>
+											<td>{{call.duration}} min</td>
+											<td>${{call.cost}}</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</li>
+						<li ng-show="bill.internationalCalls.length">
+							<div class="collapsible-header">Llamadas Internacionales <span class="right">{{bill.totals.international}}</span></div>
+							<div class="collapsible-body">
+								<table class="striped">
+									<tbody>
+										<tr ng-repeat="call in bill.internationalCalls">
+											<td>{{call.to}}</td>
+											<td>{{call.start | date: 'MM/dd/yyyy @ hh:mm'}}</td>
+											<td>{{call.duration}} min</td>
+											<td>${{call.cost}}</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</li>
+						<li>
+							<div class="collapsible-header">Total<span class="right">{{bill.calculatedTotal}}</span></div>
+						</li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<a href="#!" class="modal-action modal-close waves-effect btn-flat ">Cerrar</a>
+				</div>
+			</div>
+			</span>
+		</div>
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+		<script type="text/javascript" src="js/picker.es.js"></script>
+		<script type="text/javascript" src="js/inputmask.min.js"></script>
+		<script type="text/javascript" src="js/jquery.inputmask.min.js"></script>
+		<script type="text/javascript" src="js/inputmask.date.extensions.min.js"></script>
+		<script type="text/javascript" src="js/inputmask.phone.extensions.min.js"></script>
+		<script type="text/javascript" src="js/moment.min.js"></script>
+		<script type="text/javascript" src="js/angular/angular.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+	</body>
+</html>
